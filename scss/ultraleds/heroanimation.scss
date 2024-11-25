@@ -1,0 +1,60 @@
+.hero-container {
+  text-align: left;
+  position: relative;
+  z-index: 1;
+
+  h1 {
+    padding: 2rem 0;
+    color: $black;
+    font-size: 3rem;
+    font-weight: bold;
+    span {
+      position: relative;
+      color: $primary;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 4rem;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 5rem;
+    }
+
+    
+    .js-animate-in {
+      animation-name: animate-in;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+
+    .js-animate-out {
+      animation-name: animate-out;
+      animation-duration: 500ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+
+
+@keyframes animate-in {
+  from {
+      transform: translateY(50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes animate-out {
+  from {
+      transform: translateY(0);
+      opacity: 1;
+  }
+  to {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+}
