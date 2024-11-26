@@ -1,0 +1,41 @@
+// Define Test Data
+var tabledata = [
+  {
+    id:1,
+    name: "Targa | IP65 | 24v | Essential | Horizontal Bend LED Neon Flex | 10x15mm | 8.0W p/m | 6500k | 50m",
+    sku: "TLNEONMINI/CW/50M",
+    family: "a",
+    cct: "Very Cool White - 6500k",
+    cri: "80",
+    cutpoints: "125",
+    efficiancy: "37",
+    inputvoltagemax: "24",
+    inputvoltagemin: "24",
+    iprating: "65",
+    ledsm: "96",
+    datalength: "50000",
+    lmm: "292",
+    wm: "8",
+    datawidth: "10",
+    downloads: "<a href='#' class='btn btn-dark btn-xs' download>Data sheet</a><br><a href='#' class='btn btn-dark btn-xs' download>User manual</a>"
+  },
+  {
+    id:2,
+    name: "Targa | IP65 | 24v | Essential | Circular Rope LED Neon Flex | 10x15mm | 8.0W p/m | 6500k | 50m",
+    sku: "TL-NEONCIRC24-CW/50M",
+    family: "a",
+    cct: "Very Cool White - 6500k",
+    cri: "80",
+    cutpoints: "80.33",
+    efficiancy: "91",
+    inputvoltagemax: "24",
+    inputvoltagemin: "24",
+    iprating: "65",
+    ledsm: "144",
+    datalength: "50000",
+    lmm: "731",
+    wm: "8",
+    datawidth: "18",
+    downloads: "<a href='#' class='btn btn-dark btn-xs' download>Data sheet</a>"
+  },
+];

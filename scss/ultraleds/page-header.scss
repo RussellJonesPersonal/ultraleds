@@ -1,0 +1,23 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: $gray-100;
+  padding-top: 90px;
+  padding-bottom: 40px;
+
+  h1 {
+    padding: 2rem 0;
+    color: $black;
+    font-size: 3rem;
+    font-weight: bold;
+    span {
+      position: relative;
+      color: $primary;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 4rem;
+    }
+  }
+}
