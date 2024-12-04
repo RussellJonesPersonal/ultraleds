@@ -16,14 +16,21 @@
 
 <body>
 
-  <!-- Homepage hero -->
-  <div class="page-header">
-
-    <div class="container-fluid navbar-header">
+  <header id="header">
+    <div class="header-upper">
       <div class="container">
-        <nav class="navbar">
-
+        <div class="content">
           <a class="navbar-brand" href="index.html"><img src="img/ultraleds_logo.svg" alt="Ultra LEDs"></a>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-button">
+            <button type="button" class="btn btn-secondary" id="search-button"><i class="iconify" data-icon="ph:magnifying-glass-light"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-lower">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <i class="iconify" data-icon="ph:list-light"></i>
@@ -35,34 +42,31 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
 
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active" href="tableview.html">Strip Light</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Strip Lights</a>
+                  <a class="nav-link" href="tableview.html">Profiles</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Profiles</a>
+                  <a class="nav-link" href="tableview.html">Neon</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Drivers</a>
+                  <a class="nav-link" href="tableview.html">Light Sheets</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Neon</a>
+                  <a class="nav-link" href="tableview.html">Power Supplies</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Light Controllers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">Indoor LED Lights</a>
+                  <a class="nav-link" href="tableview.html">Controllers</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="tableview.html">Exterior Lighting</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">Syndrome Plug & Play</a>
+                  <a class="nav-link" href="tableview.html">Luminaires</a>
                 </li>
               </ul>
 
@@ -72,78 +76,54 @@
         </nav>
       </div>
     </div>
-
-    <!-- page title  -->
-    <div class="container page-title">
-    <h1>LED Strip Lights</h1>
-    </div>
-  </div>
+  </header>
 
   <!-- top level selector  -->
-  <section class="bg-black">
+  <section class="bg-gray-100">
 
     <div class="container">
 
-      <h5 class="text-white mt-4 trispace">Filter</h5>
-
-      <div class="category-navigator mb-4">
-        <div class="dropdown">
-          <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            LED Strip Lights
-          </a>
-        
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Exterior Lighting</a></li>
-            <li><a class="dropdown-item" href="#">Indoor LED Lights</a></li>
-            <li><a class="dropdown-item" href="#">LED Drivers</a></li>
-            <li><a class="dropdown-item" href="#">LED Light Controllers</a></li>
-            <li><a class="dropdown-item" href="#">LED Neon</a></li>
-            <li><a class="dropdown-item active" href="#">LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Syndeo Plug & Play</a></li>
-          </ul>
-        </div>
-
-        <div class="connector">
-          <i class="iconify" data-icon="mdi:menu-right"></i>
-        </div>
-
-        <div class="dropdown">
-          <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            White LED Strip Lights
-          </a>
-        
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">12V LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">24V LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">COB LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Colour Changing LED Strips</a></li>
-            <li><a class="dropdown-item" href="#">LED Neon Flex</a></li>
-            <li><a class="dropdown-item active" href="#">Pixel LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Plug & Play LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Single Colour LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Specialist LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Water Resistant LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">White LED Strip Lights</a></li>
-          </ul>
-        </div>
-
-        <div class="connector">
-          <i class="iconify" data-icon="mdi:menu-right"></i>
-        </div>
-
-        <div class="dropdown">
-          <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Refine further...
-          </a>
-        
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Cool White LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Extra Warm LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Neutral LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Very Warm White LED Strip Lights</a></li>
-            <li><a class="dropdown-item" href="#">Warm White LED Strip Lights</a></li>
-          </ul>
-        </div>
+      <div class="category-navigator">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <button type="button" class="nav-link">Single colour</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">Toning</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link active">Colour Changing</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">Micro & Joinery</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">Pixel</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">Neon</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">High Performance</button>
+          </li>
+        </ul>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <button type="button" class="nav-link">RGB</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">RGB+W</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">RGB+CCT</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">COB</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="nav-link">Pixel</button>
+          </li>
+        </ul>
       </div>
 
     </div>
@@ -155,25 +135,27 @@
   <!-- Table -->
   <section>
 
-    <div class="container-fluid">
+    <div class="container">
 
       <div class="table-wrapper">
         <div id="example-table"></div>
       </div>
       
+      <p class="text-muted">
+        <small>
+          Temporary table, awaiting complete table data
+          <br />
+          Replace <code>.container</code> with <code>.container-fluid</code> to make full-width
+        </small>
+      </p>
     </div>
   </section>
-
-
-  </div>
-
-
 
 
   <footer>
     <div class="upper">
       <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="footer-content">
           <ul class="list-unstyled">
             <li class="mb-1"><strong>Contact us</strong></li>
             <li class="mb-1"><a href="mailto:support@ultraleds.co.uk">E: support@ultraleds.co.uk</a></li>
@@ -186,7 +168,7 @@
     </div>
     <div class="lower">
       <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="footer-content">
           <ul class="list-unstyled">
             <li class="mb-1">Ultra LEDs is a trading name of T.R Ventures Limited, a company incorporated in England with registered number 07757720.</li>
             <li class="mb-1">Our registered office is Unit 2, Southfield Industrial Estate, Trafford Park, M17 1SJ.</li>
@@ -196,20 +178,23 @@
       </div>
     </div>
   </footer>
+
   <script src="ultraleds/js/popper.min.js"></script>
   <script src="dist/js/bootstrap.js"></script>
 
+  
+  <!-- Handles header hide / show behaviour  -->
+  <script src="ultraleds/js/header.js"></script>
 
-  <!-- js for table -->
-
-
+  <!-- 
+      TEMPORARY JS FOR TABLE
+      CHRIS TO REPLACE THIS WITH HIS OWN TABLE CODE
+  -->
   <script src="https://unpkg.com/tabulator-tables@4.0.4/dist/js/tabulator.min.js"></script>
   <!-- Load data first  -->
   <script src="ultraleds/js/table-data.js"></script>
   <!-- Settings for table  -->
   <script src="ultraleds/js/table-settings.js"></script>
-
-
 
   <!-- Iconify to load icons -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>

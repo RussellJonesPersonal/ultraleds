@@ -8,6 +8,15 @@ footer {
     font-size: 0.85rem;
   }
 
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    @include media-breakpoint-up(md) {
+      gap: $grid-gutter-width * 2;
+      grid-template-columns: auto max-content;
+    }
+  }
+
   .upper {
     padding: 3rem 0;
     background-color: $primary;

@@ -4,24 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Swiper carousel -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- Site styling -->
+  <!-- Bootstrap extended with scss files, listed in themes.scss -->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <title>Ultra LEDs</title>
   <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
 
 <body>
 
-  <!-- Homepage hero -->
-  <div class="hero">
-
-    <img src="img/temp_hero.jpg" alt="Temporary hero image">
-
-    <div class="container-fluid navbar-header">
+  <header id="header">
+    <div class="header-upper">
       <div class="container">
-        <nav class="navbar">
-
+        <div class="content">
           <a class="navbar-brand" href="index.html"><img src="img/ultraleds_logo.svg" alt="Ultra LEDs"></a>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="search-button">
+            <button type="button" class="btn btn-secondary" id="search-button"><i class="iconify" data-icon="ph:magnifying-glass-light"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-lower">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl">
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <i class="iconify" data-icon="ph:list-light"></i>
@@ -33,34 +43,30 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-
+              <ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="tableview.html">Strip Light</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Strip Lights</a>
+                  <a class="nav-link" href="tableview.html">Profiles</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Profiles</a>
+                  <a class="nav-link" href="tableview.html">Neon</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Drivers</a>
+                  <a class="nav-link" href="tableview.html">Light Sheets</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Neon</a>
+                  <a class="nav-link" href="tableview.html">Power Supplies</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">LED Light Controllers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">Indoor LED Lights</a>
+                  <a class="nav-link" href="tableview.html">Controllers</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="tableview.html">Exterior Lighting</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="tableview.html">Syndrome Plug & Play</a>
+                  <a class="nav-link" href="tableview.html">Luminaires</a>
                 </li>
               </ul>
 
@@ -70,138 +76,187 @@
         </nav>
       </div>
     </div>
-    <!-- hero animation  -->
+  </header>
+
+  <!-- Icons row  -->
+  <div class="bg-white py-2">
+    <div class="container">
+
+      <div class="icons-swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="icon-group">
+              <img src="img/icon_bespoke.png" alt="Bespoke Project Experts icon">
+              <p>Bespoke Project Experts</p> 
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="icon-group">
+              <img src="img/icon_free_delivery.png" alt="Free Delivery & Simple Returns icon">
+              <p>Free Delivery & Simple Returns</p> 
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="icon-group">
+              <img src="img/icon_tested_in_house.png" alt="Products Tested In-House icon">
+              <p>Products Tested In-House</p> 
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="icon-group">
+              <img src="img/icon_feefo.png" alt="Products Tested In-House icon">
+              <p>4.8 ★ Feefo Reviews</p> 
+            </div>
+          </div>
+        </div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev small"></div>
+        <div class="swiper-button-next small"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+
+    <img src="img/hero-bg.jpg" alt="Background image">
+
+    <!-- Hero text  -->
     <div class="container hero-container">
-      <h1>
-        We are lighting
-        <span class="js-animate-in" id="callsign"></span>
-      </h1>
+      <div class="content">
+        <h1 class="mb-4">
+          <strong>
+            We are lighting experts, innovators, designers, technicians.
+          </strong>
+          
+        </h1>
+        <h4 class="mb-4">
+          We are technical lighting experts with a exceptional understanding and offer of LED feature lighting and control.
+        </h4>
+        <a class="btn btn-lg btn-outline-light btn-hover-secondary" href="#">Discover more</a>
+      </div>
+
     </div>
 
   </div>
 
-  <!-- intro text  -->
+  <!-- Intro text  -->
   <section class="padded bg-gray-100">
     <div class="container container-lg">
       <div class="row gy-4 gx-5">
-        <div class="col-12 col-md-4">
-          <h4 class="text-primary"><strong>Lighting is not an afterthought</strong></h4>
-          <p>We see beyond fixtures, understanding how light interacts with form and function.</p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="text-primary"><strong>Quality</strong></h4>
+          <p>Our products are subject to rigorous testing carried out by our technical team and a third-party independant testing lab.</p>
         </div>
-        <div class="col-12 col-md-4">
-          <h4 class="text-primary"><strong>We are technical lighting experts</strong></h4>
-          <p>We have an exceptional understanding of LED feature lighting and control.</p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="text-primary"><strong>Proactive</strong></h4>
+          <p>We are on a mission to offer the best products to our customers who trust us to deliver what they need, when they need it.</p>
         </div>
-        <div class="col-12 col-md-4">
-          <h4 class="text-primary"><strong>We supply all sectors</strong></h4>
-          <p>From electrical contractors, event and exhibition planners, manufacturers to specifiers.</p>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="text-primary"><strong>Responsive</strong></h4>
+          <p>We understand the pressures of this fast-paced sector. That's why we offer 1000's of stocked products available next-day.</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h4 class="text-primary"><strong>Reliable</strong></h4>
+          <p>We provide warranties on all our products to give you the peace of mind so that you can ‘fit and forget’.</p>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- links section -->
+  <!-- Products area  -->
   <section class="padded">
     <div class="container">
-      <div class="text-center">
-        <h2><strong>Explore our categories</strong></h2>
-      </div>
-      <div class="links-grid mt-5">
-        <a class="links-grid-item" href="tableview.html">
-          <i class="iconify" data-icon="ph:lightbulb-light"></i>
-          LED Strip Lights
-        </a>
-        <a class="links-grid-item" href="tableview.html">
-          <i class="iconify" data-icon="ph:users-light"></i>
-          LED Profiles
-        </a>
-        <a class="links-grid-item" href="tableview.html">
-          <i class="iconify" data-icon="ph:download-light"></i>
-          LED Drivers
-        </a>
-        <a class="links-grid-item" href="tableview.html">
-          <i class="iconify" data-icon="ph:signature-light"></i>
-          LED Neon
-        </a>
-        <a class="links-grid-item" href="tableview.html">
-          <i class="iconify" data-icon="ph:faders-light"></i>
-          LED Light Controllers
-        </a>
-        <a class="links-grid-item" href="tableview.html">
-          <i class="iconify" data-icon="ph:house-light"></i>
-          Indoor LED Lights
-        </a>
-        <a class="links-grid-item" href="tableview.html">
-          <i class="iconify" data-icon="ph:plant-light"></i>
-          Exterior Lighting
-        </a>
-        <a class="links-grid-item" href="tableview.html">
-          <i class="iconify" data-icon="ph:plugs-light"></i>
-          Syndrome Plug & Play
-        </a>
+      <div class="products-grid">
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">New LED Neon Flex</h4>
+            <p class="card-text">Tagra | Professional Cut Anywhere | Micro Horizontal Bend LED Neon Flex | 3x6mm</p>
+          </div>
+          <div class="card-img-wrapper">
+            <a href="#" class="btn btn-secondary btn-lg">Discover more</a>
+            <img src="img/product_bg_1.jpg" class="card-img-bottom" alt="Background image">
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">New LED Light Sheets</h4>
+            <p class="card-text">Tagra | Professional | LED Light Sheet | 503x235mm | Pack of 4 | 3000K & 6500K</p>
+          </div>
+          <div class="card-img-wrapper">
+            <a href="#" class="btn btn-secondary btn-lg">Discover more</a>
+            <img src="img/product_bg_2.jpg" class="card-img-bottom" alt="Background image">
+          </div>
+
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">New LED Profile</h4>
+            <p class="card-text">Tagra | Micro Width | LED Profile | Aluminium | 7.8x9mm | Silver & Black</p>
+          </div>
+          <div class="card-img-wrapper">
+            <a href="#" class="btn btn-secondary btn-lg">Discover more</a>
+            <img src="img/product_bg_3.jpg" class="card-img-bottom" alt="Background image">
+          </div>
+
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- carousel section -->
-  <section>
-    <div class="text-center">
-      <h2><strong>Gallery</strong></h2>
-    </div>
-    <div class="container">
-      <div class="carousel">
-        <div>
-          <img src="https://picsum.photos/400/300" alt="image">
-        </div>
-        <div>
-          <img src="https://picsum.photos/200/500" alt="image">
-        </div>
-        <div>
-          <img src="https://picsum.photos/400/500" alt="image">
-        </div>
-        <div>
-          <img src="https://picsum.photos/600/600" alt="image">
-        </div>
-        <div>
-          <img src="https://picsum.photos/700/500" alt="image">
-        </div>
-        <div>
-          <img src="https://picsum.photos/600/800" alt="image">
-        </div>
-        <div>
-          <img src="https://picsum.photos/500/500" alt="image">
-        </div>
-        <div>
-          <img src="https://picsum.photos/500/600" alt="image">
-        </div>
-
-      </div>
-    </div>
-    <div class="text-center">
-      <p class="text-muted mt-1">[temporary images]</p>
-    </div>
-
-  </section>
-
-  <!-- brands section -->
-  <section class="padded">
+  <!-- Brands section -->
+  <section class="padded bg-gray-100">
     <div class="container">
       <div class="text-center">
         <h2><strong>Our brands</strong></h2>
       </div>
-      <div class="brands-grid mt-5">
-        <div class="brand">Placeholder</div>
-        <div class="brand">Placeholder</div>
-        <div class="brand">Placeholder</div>
-        <div class="brand">Placeholder</div>
-        <div class="brand">Placeholder</div>
-        <div class="brand">Placeholder</div>
+
+      <div class="swiper products-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="brand"><img src="img/logo_advatek.jpg" alt="Advatek"></div></div>
+          <div class="swiper-slide"><div class="brand"><img src="img/logo_ltech.jpg" alt="Ltech"></div></div>
+          <div class="swiper-slide"><div class="brand"><img src="img/logo_meanwell.jpg" alt="Mean Well"></div></div>
+          <div class="swiper-slide"><div class="brand"><img src="img/logo_milight.jpg" alt="Mi Light"></div></div>
+          <div class="swiper-slide"><div class="brand"><img src="img/logo_sunricher.jpg" alt="Sunricher"></div></div>
+          <div class="swiper-slide"><div class="brand"><img src="img/logo_syndeo.jpg" alt="Syndeo"></div></div>
+          <div class="swiper-slide"><div class="brand"><img src="img/logo_tagra.jpg" alt="Tagra"></div></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
       </div>
+
     </div>
   </section>
 
-  <!-- text section -->
+  <!-- Solutions section -->
+  <section class="padded">
+    <div class="container">
+
+      <div class="solutions-wrapper">
+        <img src="img/homepage-img.jpg" alt="Solutions background image">
+        <div class="content">
+          <h3 class="mb-4"><strong>Solutions for every installation.</strong></h3>
+          <p>Dedicated in-house production department has vast lighting knowledge and years of experience.</p>
+          <p>Implementing a special projects team to manage and capitalise on high value orders ensuring they get the required dedicated treatment.</p>
+          <p class="mt-4"><a href="#" class="btn btn-lg btn-primary">View Bespoke Products</a></p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+  <!-- Text section -->
   <section class="padded bg-gray-100">
     <div class="container container-narrow">
       <div class="text-center mb-5">
@@ -223,7 +278,7 @@
   <footer>
     <div class="upper">
       <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="footer-content">
           <ul class="list-unstyled">
             <li class="mb-1"><strong>Contact us</strong></li>
             <li class="mb-1"><a href="mailto:support@ultraleds.co.uk">E: support@ultraleds.co.uk</a></li>
@@ -236,7 +291,7 @@
     </div>
     <div class="lower">
       <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="footer-content">
           <ul class="list-unstyled">
             <li class="mb-1">Ultra LEDs is a trading name of T.R Ventures Limited, a company incorporated in England with registered number 07757720.</li>
             <li class="mb-1">Our registered office is Unit 2, Southfield Industrial Estate, Trafford Park, M17 1SJ.</li>
@@ -249,11 +304,13 @@
 
   <script src="dist/js/bootstrap.js"></script>
 
-  <script src="ultraleds/js/heroanimation.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="ultraleds/js/homepagecarousel.js"></script>
+  <!-- Handles header hide / show behaviour  -->
+  <script src="ultraleds/js/header.js"></script>
+
+  <!-- Swiper carousel -->
+  <script src="//cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="ultraleds/js/icons-swiper.js"></script>
+  <script src="ultraleds/js/products-swiper.js"></script>
 
   <!-- Iconify to load icons -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/iconify/2.0.0/iconify.min.js"></script>

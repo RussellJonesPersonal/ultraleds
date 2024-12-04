@@ -5,7 +5,7 @@
   aspect-ratio: 4/3;
   position: relative;
   background-color: white;
-  padding-top: 50px;
+  padding: 4rem 0;
   > img {
     position: absolute;
     top: 0;
@@ -15,10 +15,60 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.4;
   }
   @include media-breakpoint-up(lg) {
-    aspect-ratio: 6/2;
+    aspect-ratio: 5/3;
+  }
+  @include media-breakpoint-up(xl) {
+    aspect-ratio: 8/3;
+  }
+  @include media-breakpoint-up(xxl) {
+    aspect-ratio: 9/3;
   }
 }
 
+.hero-container {
+  color: $white;
+  z-index: 10;
+  .content {
+    text-align: center;
+    padding: 2rem;
+    @include media-breakpoint-up(lg) {
+      text-align: left;
+      padding: 0;
+      max-width: 600px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 800px;
+    }
+  }
+}
+
+.solutions-wrapper {
+  position: relative;
+  background-color: $black;
+  color: $white;
+  .content {
+    padding: 3rem;
+    z-index: 2;
+  }
+  img {
+    display: none;
+  }
+  @include media-breakpoint-up(lg) {
+    .content {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      max-width: 750px;
+    }
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      display: block;
+    }
+  }
+}

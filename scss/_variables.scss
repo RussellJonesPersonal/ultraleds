@@ -299,8 +299,8 @@ $cyans: (
 
 // scss-docs-start theme-color-variables
 $primary:       #840AEF !default;
-$secondary:     #D40005 !default;
-$success:       #97FF52 !default;
+$secondary:     #97FF52 !default;
+$success:       $green !default;
 $info:          #4AFBFF !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
@@ -544,12 +544,12 @@ $border-color-translucent:    rgba($black, .175) !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius:               .375rem !default;
-$border-radius-sm:            .25rem !default;
-$border-radius-lg:            .5rem !default;
-$border-radius-xl:            1rem !default;
-$border-radius-xxl:           2rem !default;
-$border-radius-pill:          50rem !default;
+$border-radius:               0 !default;
+$border-radius-sm:            0 !default;
+$border-radius-lg:            0 !default;
+$border-radius-xl:            0 !default;
+$border-radius-xxl:           0 !default;
+$border-radius-pill:          0 !default;
 // scss-docs-end border-radius-variables
 // fusv-disable
 $border-radius-2xl:           $border-radius-xxl !default; // Deprecated in v5.3.0
@@ -802,9 +802,9 @@ $input-btn-padding-y-sm:      .25rem !default;
 $input-btn-padding-x-sm:      .5rem !default;
 $input-btn-font-size-sm:      $font-size-sm !default;
 
-$input-btn-padding-y-lg:      .5rem !default;
-$input-btn-padding-x-lg:      1rem !default;
-$input-btn-font-size-lg:      $font-size-lg !default;
+$input-btn-padding-y-lg:      .6rem !default;
+$input-btn-padding-x-lg:      1.6rem !default;
+$input-btn-font-size-lg:      $font-size-base !default;
 
 $input-btn-border-width:      var(--#{$prefix}border-width) !default;
 // scss-docs-end input-btn-variables
@@ -1176,7 +1176,7 @@ $nav-tabs-link-active-border-color: var(--#{$prefix}border-color) var(--#{$prefi
 
 $nav-pills-border-radius:           var(--#{$prefix}border-radius) !default;
 $nav-pills-link-active-color:       $component-active-color !default;
-$nav-pills-link-active-bg:          $component-active-bg !default;
+$nav-pills-link-active-bg:          $black !default;
 
 $nav-underline-gap:                 1rem !default;
 $nav-underline-border-width:        .125rem !default;
@@ -1721,7 +1721,7 @@ $btn-close-white-filter:     invert(1) grayscale(100%) brightness(200%) !default
 // scss-docs-start offcanvas-variables
 $offcanvas-padding-y:               $modal-inner-padding !default;
 $offcanvas-padding-x:               $modal-inner-padding !default;
-$offcanvas-horizontal-width:        400px !default;
+$offcanvas-horizontal-width:        320px !default;
 $offcanvas-vertical-height:         30vh !default;
 $offcanvas-transition-duration:     .3s !default;
 $offcanvas-border-color:            $modal-content-border-color !default;

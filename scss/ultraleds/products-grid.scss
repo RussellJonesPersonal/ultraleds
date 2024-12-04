@@ -1,0 +1,32 @@
+.products-grid {
+  display: grid;
+  gap: $grid-gutter-width * 2;
+  grid-template-columns: repeat(1, 1fr);
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .card {
+    border: none;
+    background-color: $black;
+    color: $white;
+    .card-body {
+      padding: 3rem;
+    }
+
+    .card-img-wrapper {
+      position: relative;
+      img {
+        aspect-ratio: 10/8;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .btn {
+        position: absolute;
+        bottom: 3rem;
+        left: 3rem;
+      }
+    }
+  }
+}

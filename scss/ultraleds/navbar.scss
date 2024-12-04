@@ -1,32 +1,87 @@
-.navbar-header {
+header {
   position: fixed;
   z-index: 300;
-  display: flex;
   top: 0;
   left: 0;
   width: 100vw;
-  background-color: rgba($white, 0);
-  box-shadow: 0px 0 0 0px rgba(0,0,0,0.0);
-  animation: scroll 1s linear forwards;
-  animation-timeline: view();
-  animation-range-start: 100vh;
-  animation-range-end: calc(100vh + 200px);
-}
+  transition: all 0.3s ease;
 
-@keyframes scroll {
-  to {
-    background-color: rgba($white, 1);
-    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.3);
+  .header-upper {
+    background-color: $black;
+    color: $gray-100;
+    padding: 1rem 0;
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      .input-group {
+        .btn {
+          padding: 0;
+          width: 38px;
+          .iconify {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .navbar-brand {
+        padding: 1rem 0;
+        img {
+          width: auto;
+          height: 30px;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        .input-group {
+          margin-bottom: 1rem;
+          width: 240px;
+        }
+        .navbar-brand {
+          padding: 1rem 0;
+          img {
+            width: auto;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .header-lower {
+    background-color: $primary;
+    @include media-breakpoint-up(xl) {
+
+      .navbar {
+        padding: 0;
+      }
+
+      .nav-link {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        color: $white;
+        font-size: $font-size-base;
+        &.active {
+          color: $white;
+          background-color: $black;
+        }
+        &:hover {
+          background-color: $black;
+        }
+      }
+    }
+  }
+  &.hide {
+    top: -105px;
+    @include media-breakpoint-up(lg) {
+      top: -114px;
+    }
   }
 }
 
-.navbar-brand {
-  padding: 1rem 0;
-  img {
-    width: auto;
-    height: 50px;
-  }
-}
 
 .navbar-toggler {
   aspect-ratio: 1;
@@ -39,7 +94,7 @@
   justify-content: center;
   padding: 0;
   font-size: 2rem;
-  color: $primary !important;
+  color: $white !important;
   box-shadow: none;
   &:hover, &:focus {
     outline: none;

@@ -2,6 +2,10 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 188px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 170px;
+  }
 }
 
 footer {

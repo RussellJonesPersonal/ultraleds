@@ -1,11 +1,57 @@
 .category-navigator {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-items: flex-start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  .nav-pills {
+    margin-bottom: 1rem;
 
-  .iconify {
-    color: $white;
-    font-size: 30px;
+    .nav-item {
+      position: relative;
+
+      
+      &:before {
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        bottom: 10px;
+        display: flex;
+        width: 1px;
+        background-color: $black;
+        content: "";
+      }
+      &:first-child {
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    .nav-link {
+      font-size: $font-size-sm;
+      color: $black;
+      &:hover {
+        color: $primary
+      }
+      &.active {
+        z-index: 10;
+        position: relative;
+        color: $white;
+        &:before {
+          position: absolute;
+          right: -1px;
+          top: 10px;
+          bottom: 10px;
+          display: flex;
+          width: 1px;
+          background-color: $gray-100;
+          content: "";
+        }
+        &:hover {
+          background-color: $primary;
+          color: $white;
+        }
+      }
+
+    }
+
   }
 }
