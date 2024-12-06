@@ -2,7 +2,9 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   .nav-pills {
-    margin-bottom: 1rem;
+    +.nav-pills {
+      margin-top: 1rem;
+    }
 
     .nav-item {
       position: relative;

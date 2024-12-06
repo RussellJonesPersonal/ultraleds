@@ -42,7 +42,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+              <ul class="navbar-nav nav-fill flex-grow-1">
 
                 <li class="nav-item">
                   <a class="nav-link active" href="tableview.html">Strip Light</a>
@@ -86,44 +86,203 @@
       <div class="category-navigator">
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <button type="button" class="nav-link">Single colour</button>
+            <button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#singleColorTab">Single colour</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="nav-link">Toning</button>
+            <button type="button"  class="nav-link" data-bs-toggle="pill" data-bs-target="#toningTab">Toning</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="nav-link active">Colour Changing</button>
+            <button type="button"  class="nav-link" data-bs-toggle="pill" data-bs-target="#colorChangingTab">Colour Changing</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="nav-link">Micro & Joinery</button>
+            <button type="button"  class="nav-link" data-bs-toggle="pill" data-bs-target="#microJoineryTab">Micro & Joinery</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="nav-link">Pixel</button>
+            <button type="button"  class="nav-link" data-bs-toggle="pill" data-bs-target="#pixelTab">Pixel</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="nav-link">Neon</button>
+            <button type="button"  class="nav-link" data-bs-toggle="pill" data-bs-target="#neonTab">Neon</button>
           </li>
           <li class="nav-item">
-            <button type="button" class="nav-link">High Performance</button>
+            <button type="button"  class="nav-link" data-bs-toggle="pill" data-bs-target="#highPerformanceTab">High Performance</button>
           </li>
         </ul>
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <button type="button" class="nav-link">RGB</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="nav-link">RGB+W</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="nav-link">RGB+CCT</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="nav-link">COB</button>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="nav-link">Pixel</button>
-          </li>
-        </ul>
+
+
+        <div class="tab-content">
+
+          <div class="tab-pane" id="singleColorTab">
+            
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <button type="button" class="nav-link">RGB</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">RGB+W</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">RGB+CCT</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">COB</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="tab-pane" id="toningTab">
+            
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 1</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 2</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 3</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 4</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 5</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 6</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="tab-pane" id="colorChangingTab">
+            
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <button type="button" class="nav-link">Another link 1</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Another link 2</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Another link 3</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Another Link 4</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Another link 5</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Another link 7</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Another link 8</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="tab-pane" id="microJoineryTab">
+            
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <button type="button" class="nav-link">Joinery 1</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Micro 2</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Joinery 3</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Micro 4</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="tab-pane" id="pixelTab">
+            
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel Link 1</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel Link 2</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel Link 3</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel Link 4</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel Link 5</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel Link 6</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel Link 7</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Pixel Link 8</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="tab-pane" id="neonTab">
+            
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 1</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 2</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 3</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 4</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">Link 5</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <div class="tab-pane" id="highPerformanceTab">
+            
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <button type="button" class="nav-link">HP Link 1</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">HP Link 2</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">HP Link 3</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">HP Link 4</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="nav-link">HP Link 5</button>
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+
       </div>
 
     </div>

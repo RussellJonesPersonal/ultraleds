@@ -11997,15 +11997,6 @@ header.hide {
   box-shadow: none;
 }
 
-.nav-link {
-  font-family: "Trispace", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: #840AEF;
-}
-
 .hero {
   display: flex;
   align-items: center;
@@ -15117,8 +15108,8 @@ body.tabulator-print-fullscreen-hide > *:not(.tabulator-print-fullscreen) {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.category-navigator .nav-pills {
-  margin-bottom: 1rem;
+.category-navigator .nav-pills + .nav-pills {
+  margin-top: 1rem;
 }
 .category-navigator .nav-pills .nav-item {
   position: relative;
