@@ -1,9 +1,8 @@
 
-
 const table = new Tabulator("#example-table", {
   minheight:"200px",
-  maxHeight:"100%",
-  layout:"fitColumns",
+  maxheight: '100%',
+  frozenRows:1,
   data:tabledata,
   columns:[
       {title:"Name", field:"name", minWidth:250, sorter:"string",  dir:"asc"},

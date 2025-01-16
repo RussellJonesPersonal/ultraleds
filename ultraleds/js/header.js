@@ -7,7 +7,7 @@
   let prevDirection = 0
   const header = document.getElementById('header')
   let toggled
-  const threshold = 200
+  const threshold = 100
 
   const checkScroll = function () {
     curScroll = w.scrollY || doc.scrollTop

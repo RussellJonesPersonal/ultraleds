@@ -15,6 +15,17 @@ footer {
       gap: $grid-gutter-width * 2;
       grid-template-columns: auto max-content;
     }
+    p {
+      margin-bottom: 0.4rem;
+    }
+    img {
+      margin-top: 0;
+    }
+    @include media-breakpoint-up(md) {
+      img {
+        float: right
+      }
+    }
   }
 
   .upper {
@@ -46,6 +57,7 @@ footer {
         text-decoration: underline;
       }
     }
+
   }
 
 

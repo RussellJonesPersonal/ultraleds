@@ -11,8 +11,9 @@
 // @import "slick.scss";
 @import "footer.scss";
 @import "page-header.scss";
-@import "tabulator.scss";
-@import "tabulator_bootstrap5.scss";
+@import "../../node_modules/tabulator-tables/src/scss/tabulator.scss";
 @import "datatable.scss";
 @import "nav-pills.scss";
 @import "icons-swiper.scss";
+@import "sectors-swiper.scss";
+@import "table-customiser.scss";
