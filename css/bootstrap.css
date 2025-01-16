@@ -13662,7 +13662,6 @@ body.tabulator-print-fullscreen-hide > *:not(.tabulator-print-fullscreen) {
   width: 100%;
   z-index: -1;
   filter: brightness(65%);
-  margin-bottom: 1rem;
 }
 .sector h2, .sector .h2 {
   position: absolute;
@@ -13677,6 +13676,20 @@ body.tabulator-print-fullscreen-hide > *:not(.tabulator-print-fullscreen) {
   font-weight: bolder;
   letter-spacing: 0.1rem;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+a.sector {
+  transition: all 0.2s ease-in-out;
+  bottom: 0;
+}
+a.sector img {
+  transition: all 0.2s ease-in-out;
+}
+a.sector:hover {
+  bottom: 10px;
+}
+a.sector:hover img {
+  filter: brightness(85%);
 }
 
 .toggle-category {
