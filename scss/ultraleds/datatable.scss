@@ -44,7 +44,7 @@
     background-color: transparent !important;
   }
   .tabulator-cell {
-    border-right: 1px solid $gray-500 !important;
+    border-right: none !important;
     border-bottom: 1px solid $gray-500 !important;
   }
 }
@@ -80,7 +80,7 @@
   .tabulator-col {
     background-color: $gray-300 !important;
     border: none !important;
-    border-right: 1px solid $gray-500 !important;
+    border-right: none !important;
     border-bottom: 1px solid $gray-500 !important;
   }
 }

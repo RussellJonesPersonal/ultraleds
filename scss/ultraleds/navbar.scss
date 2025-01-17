@@ -9,12 +9,16 @@ header {
   .header-upper {
     background-color: $black;
     color: $gray-100;
-    padding: 1rem 0;
+    padding: 0.94rem 0;
     .content {
       display: flex;
       flex-direction: column;
 
       .input-group {
+        margin-bottom: 0.25rem;
+        @include media-breakpoint-up(lg) {
+          margin-bottom: 0;
+        }
         .btn {
           padding: 0;
           width: 38px;
@@ -44,7 +48,7 @@ header {
           padding: 1rem 0;
           img {
             width: auto;
-            height: 50px;
+            height: 38px;
           }
         }
       }
@@ -75,9 +79,9 @@ header {
     }
   }
   &.hide {
-    top: -105px;
+    top: -134px;
     @include media-breakpoint-up(lg) {
-      top: -114px;
+      top: -100px;
     }
   }
 }
