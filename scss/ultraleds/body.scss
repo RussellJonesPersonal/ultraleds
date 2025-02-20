@@ -1,4 +1,5 @@
 body {
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -6,6 +7,11 @@ body {
   @include media-breakpoint-up(lg) {
     padding-top: 156px;
   }
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 footer {

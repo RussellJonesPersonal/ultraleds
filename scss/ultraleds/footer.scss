@@ -31,7 +31,8 @@ footer {
   .upper {
     padding: 3rem 0;
     background-color: $primary;
-    background: linear-gradient(90deg, #B33FFF 0%, #840AEF 100%);
+    // background: linear-gradient(90deg, #B33FFF 0%, #840AEF 100%);
+    background-color: $black;
     color: $white;
 
     a {

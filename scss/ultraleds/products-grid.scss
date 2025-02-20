@@ -26,6 +26,11 @@
         position: absolute;
         bottom: 3rem;
         left: 3rem;
+        &:hover {
+          color: $white;
+          background-color: $black;
+          border-color: $black;
+        }
       }
     }
   }
