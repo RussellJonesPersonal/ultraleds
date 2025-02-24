@@ -1,11 +1,17 @@
 body {
+
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 188px;
+  padding-top: 190px;
   @include media-breakpoint-up(lg) {
-    padding-top: 170px;
+    padding-top: 156px;
   }
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 footer {

@@ -1,0 +1,41 @@
+.toggle-category {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.btn-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  color: $body-color;
+  .iconify {
+    display: none;
+    &.active {
+      display: flex;
+    }
+  }
+  &:hover {
+    color: $primary;
+  }
+}
+
+#toggle_container {
+  transition: all ease-in-out 0.25s;
+  &.full-width {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+
+.tabulator .tabulator-header {
+  position: absolute;
+  top: 0;
+}

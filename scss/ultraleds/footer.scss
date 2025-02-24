@@ -15,12 +15,24 @@ footer {
       gap: $grid-gutter-width * 2;
       grid-template-columns: auto max-content;
     }
+    p {
+      margin-bottom: 0.4rem;
+    }
+    img {
+      margin-top: 0;
+    }
+    @include media-breakpoint-up(md) {
+      img {
+        float: right
+      }
+    }
   }
 
   .upper {
     padding: 3rem 0;
     background-color: $primary;
-    background: linear-gradient(90deg, #B33FFF 0%, #840AEF 100%);
+    // background: linear-gradient(90deg, #B33FFF 0%, #840AEF 100%);
+    background-color: $black;
     color: $white;
 
     a {
@@ -46,6 +58,7 @@ footer {
         text-decoration: underline;
       }
     }
+
   }
 
 
